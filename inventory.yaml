@@ -1,0 +1,12 @@
+groups:
+  - name: ideadog
+    groups:
+      - name: webserver
+        nodes:
+          - 138.68.235.246
+    config:
+      transport: ssh
+      ssh:
+        user: root
+        private-key: ~/.ssh/digO
+        host-key-check: false
