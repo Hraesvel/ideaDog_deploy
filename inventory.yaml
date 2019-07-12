@@ -1,12 +1,20 @@
 groups:
   - name: ideadog
     groups:
-      - name: webserver
+      - name: aws
         nodes:
-          - 138.68.235.246
+          - 52.39.235.9
+    groups:
+      - name: dig
+        nodes:
+          - 157.230.140.229
+        config:
+          ssh:
+            user: root
+            private-key: ~/.ssh/digO
     config:
       transport: ssh
       ssh:
-        user: root
-        private-key: ~/.ssh/digO
+        user: ubuntu
+        private-key: ~/.ssh/ideadog.pem
         host-key-check: false
